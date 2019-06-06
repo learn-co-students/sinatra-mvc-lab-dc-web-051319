@@ -5,7 +5,20 @@
     <title>title</title>
   </head>
   <body>
-    <h1>Pig Latinizer</h1>
+    <h1>Pig Latinizer!</h1>
+
+    <form action="/piglatinize" method="post">
+      <label for="user_phrase">Enter your phrase:</label>
+      <input type="text" name="user_phrase">
+      <input type="submit" value="Piglatinize!">
+    </form>
+
+    <div id="result">
+      <h2>Original Phrase:</h2>
+      <h3><%= @original_phrase %></h3>
+      <h2>Piglzatinized:</h2>
+      <h3><%= @new_phrase %></h3>
+    </div>
   
   </body>
 </html>
