@@ -6,8 +6,11 @@
     </head>
     <body>
         <h2>Your Sentence in Pig Latin!</h2>
-        <%= @modified_sentence %>
+        <h2><u>Original sentence:</u> <%= @sentence %></h2>
+        <h2><u>Modified sentence:</u> <%= @pig %></h2>
 
-
+        <form action="/" method="redirect">
+            <input type="submit" value="Home">
+        </form>
     </body>
 </html>
