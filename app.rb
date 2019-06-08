@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 require_relative 'config/environment'
 
+# Joe's Solution
 class App < Sinatra::Base
-
   get '/' do
     erb :user_input
   end
@@ -11,5 +13,4 @@ class App < Sinatra::Base
     @piglatin = pl.piglatinize(params[:user_phrase])
     erb :results
   end
-
 end
